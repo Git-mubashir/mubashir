@@ -17,8 +17,12 @@ const display = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://siteforprojectmkmprotfolio.com'),
   title: 'MKM — Portfolio',
-  description: 'Mubashir Khan Mohammed — Senior Java & Full Stack Developer'
+  description: 'Mubashir Khan Mohammed — Senior Java & Full Stack Developer',
+  alternates: {
+    canonical: '/'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

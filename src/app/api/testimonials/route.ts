@@ -4,6 +4,8 @@ import { z } from 'zod';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 
+export const dynamic = 'force-dynamic';
+
 // This route is the reference pattern for the rest of the admin-editable
 // content (clients, posts, payment methods): GET is public and only returns
 // approved rows; POST requires an ADMIN session. Copy this shape for the
